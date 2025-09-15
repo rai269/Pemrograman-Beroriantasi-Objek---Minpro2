@@ -40,27 +40,24 @@ Class utama yang berisi method  dan seluruh logika program.
 #### A. Import Package
 
     import java.util.Scanner;
-    import java.util.ArrayList;
+    import Service.Service;
 
 
 Scanner digunakan untuk mengambil input dari user.
 
-ArrayList digunakan untuk menyimpan daftar tiket secara dinamis.
+Service digunakan untuk mengambil kode dari Class Service
 
 
 
 
 #### B. Inisialisasi Data
-
-    static Scanner objekScanner = new Scanner(System.in); 
-    static ArrayList<String> daftarTiket = new ArrayList<>();
+``` bash
+static Scanner oScanner = new Scanner(System.in); 
+Service.initDaftarTiket();
+```
     
 
-objekScanner: objek untuk membaca input user.
-
-daftarTiket: menampung semua data tiket yang tersedia.
-
-
+Scanner: objek untuk membaca input user.
 
 
 #### C. menuUtama()
