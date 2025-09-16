@@ -524,6 +524,8 @@ Saat program berjalan, maka program akan langsung menampilkan menu pilihan:
 
 5. Cari Tiket
 
+6. Keluar
+
 Alur Interaksi User
 
 Jika memilih 1 (Lihat Tiket) maka program akan menampilkan daftar tiket yang ada. Jika kosong, sistem akan memberi tahu bahwa tiket belum tersedia.
@@ -542,3 +544,51 @@ Jika memilih 6 (Keluar) maka program akan berhenti.
 #### 3. Validasi Input
 
 Jika user memasukkan pilihan yang tidak valid, sistem akan menampilkan pesan error dan kembali ke menu utama.
+
+
+
+
+### 4. Penerapan MVC
+
+Apa itu MVC? MVC atau Model View Control adalahsalah satu pola arsitektur (design pattern) yang digunakan dalam pengembangan perangkat lunak.
+Tujuan utama MVC adalah memisahkan logika program menjadi tiga bagian utama agar kode lebih rapi, terstruktur, mudah dipelihara, dan fleksibel untuk dikembangkan.
+
+di dalam program ini, penulis juga menerapkan MVC
+
+#### A. Model
+
+Pada Bagian model berisi sebuah kode untuk menyimpan data sementara dan melakukan deklarasi variabel, berikut adalah list hal yang Class model dapat lakukan:
+
+
+1. Bagian yang berhubungan dengan data dan aturan bisnis.
+
+2. Menyimpan, mengambil, dan memproses data.
+
+3. Tidak tahu soal tampilan (UI), hanya fokus pada logika data.
+
+   
+
+#### B. View
+
+View sendiri diterapkan pada Class Service yang berfungsi untuk menyimpan hal yang berhubungan dengan logika program, View sendiri akan berhubungan dengan Control
+
+dimana user dapat melakukan control terhadap program, berikut adalah hal yang dapat dilakukan oleh View:
+
+1. Bagian yang berhubungan dengan tampilan ke user (UI/UX).
+
+2. Menampilkan data ke layar atau menerima input.
+
+3. Tidak tahu cara data disimpan, hanya menampilkan hasil.
+
+
+#### C. Control
+
+Control adalah bagian paling depan yang berhubungan langsung dengan user dapat dilihat pada Package PostTest2 dengan
+Class Main yang dimana kodenya sendiri digunakan untuk run dan sebagai kode inti
+agar program bisa berjalan, berikut adalah hal yang dapat dilakukan oleh control
+
+1. Bagian yang menghubungkan View dan Model.
+
+2. Menerima input dari user (dari View), lalu memerintahkan Model untuk memproses data, dan mengembalikan hasil ke View.
+
+Pada Penjelesan MVC diatas, pembuktian dalam penggunaan MVC adalah terdapat pada package yang berbeda beda, namun kodenya tetap bisa berjalan.
